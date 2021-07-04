@@ -23,6 +23,39 @@
         <option value="$PROJECT_DIR$/../orange-config/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-object/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-restapi/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-wap/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/catalog-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../catalog-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-object/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-restapi/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-wap/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/goods-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../goods-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-object/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-restapi/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-security/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/merchant-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../merchant-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-object/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-restapi/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-wap/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/order-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-microservice/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

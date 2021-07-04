@@ -6,47 +6,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="orange-core" />
-        <module name="merchant-domain" />
-        <module name="goods-domain" />
-        <module name="orange-backup" />
-        <module name="catalog-client" />
-        <module name="goods-web" />
-        <module name="catalog-web" />
-        <module name="orange-admin" />
-        <module name="goods-restapi" />
-        <module name="catalog-wap" />
-        <module name="merchant-object" />
-        <module name="goods-object" />
-        <module name="orange-monitor" />
         <module name="orange-config" />
-        <module name="order-domain" />
-        <module name="orange-hystrix" />
-        <module name="order-web" />
-        <module name="orange-order2" />
+        <module name="orange-monitor" />
+        <module name="orange-consumer" />
         <module name="orange-zuul" />
         <module name="orange-gateway" />
-        <module name="merchant-client" />
-        <module name="goods-client" />
-        <module name="goods-wap" />
-        <module name="merchant-web" />
-        <module name="order-object" />
-        <module name="merchant-restapi" />
-        <module name="catalog-domain" />
-        <module name="merchant-sso" />
-        <module name="catalog-restapi" />
-        <module name="merchant-security" />
-        <module name="order-wap" />
-        <module name="orange-common" />
-        <module name="order-restapi" />
+        <module name="orange-hystrix" />
+        <module name="orange-core" />
         <module name="orange-order" />
-        <module name="orange-consumer" />
-        <module name="catalog-object" />
-        <module name="order-client" />
+        <module name="orange-admin" />
+        <module name="orange-backup" />
+        <module name="orange-order2" />
+        <module name="orange-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="catalog-client" target="1.8" />
+      <module name="catalog-domain" target="1.8" />
+      <module name="catalog-microservice" target="1.8" />
+      <module name="catalog-object" target="1.8" />
+      <module name="catalog-restapi" target="1.8" />
+      <module name="catalog-wap" target="1.8" />
+      <module name="catalog-web" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="goods-client" target="1.8" />
+      <module name="goods-domain" target="1.8" />
+      <module name="goods-microservice" target="1.8" />
+      <module name="goods-object" target="1.8" />
+      <module name="goods-restapi" target="1.8" />
+      <module name="goods-wap" target="1.8" />
+      <module name="goods-web" target="1.8" />
+      <module name="merchant-client" target="1.8" />
+      <module name="merchant-domain" target="1.8" />
+      <module name="merchant-microservice" target="1.8" />
+      <module name="merchant-object" target="1.8" />
+      <module name="merchant-restapi" target="1.8" />
+      <module name="merchant-security" target="1.8" />
+      <module name="merchant-sso" target="1.8" />
+      <module name="merchant-web" target="1.8" />
+      <module name="order-client" target="1.8" />
+      <module name="order-domain" target="1.8" />
+      <module name="order-microservice" target="1.8" />
+      <module name="order-object" target="1.8" />
+      <module name="order-restapi" target="1.8" />
+      <module name="order-wap" target="1.8" />
+      <module name="order-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
