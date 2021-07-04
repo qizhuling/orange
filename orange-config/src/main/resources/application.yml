@@ -1,15 +1,27 @@
 server:
-  port: 8888
+  port: 8020
 spring:
   application:
     name: orange-config
-  boot:
-    admin:
-      client:
-        url: "http://localhost:8000"
   cloud:
     consul:
       host: localhost
       port: 8500
       discovery:
-        serviceName: ${spring.application.name}
+        serviceName: ${spring.application.name}	# 注册到consul的服务名称
+    config:
+      label: master  # git仓库分支
+      server:
+        git:
+          uri: https://gitee.com/qi_zhu_ling/orange-config-repo.git # 配置git仓库的地址
+#          search-paths: /config-repo  # git仓库地址下的相对地址，可以配置多个，用,分割。
+  rabbitmq:
+    host: 39.98.197.210
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
