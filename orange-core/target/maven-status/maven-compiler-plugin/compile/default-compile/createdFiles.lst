@@ -1,0 +1,8 @@
+com\wc\orange\core\service\CurdService.class
+com\wc\orange\core\page\PageResult.class
+com\wc\orange\core\page\Param.class
+com\wc\orange\core\http\HttpStatus.class
+com\wc\orange\core\page\PageRequest.class
+com\wc\orange\core\page\MybatisPageHelper.class
+com\wc\orange\core\http\HttpResult.class
+com\wc\orange\core\exception\OrangeException.class

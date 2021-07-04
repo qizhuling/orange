@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="orange-core" />
+        <module name="merchant-domain" />
+        <module name="goods-domain" />
+        <module name="orange-backup" />
+        <module name="catalog-client" />
+        <module name="goods-web" />
+        <module name="catalog-web" />
+        <module name="orange-admin" />
+        <module name="goods-restapi" />
+        <module name="catalog-wap" />
+        <module name="merchant-object" />
+        <module name="goods-object" />
+        <module name="orange-monitor" />
+        <module name="orange-config" />
+        <module name="order-domain" />
+        <module name="orange-hystrix" />
+        <module name="order-web" />
+        <module name="orange-order2" />
+        <module name="orange-zuul" />
+        <module name="orange-gateway" />
+        <module name="merchant-client" />
+        <module name="goods-client" />
+        <module name="goods-wap" />
+        <module name="merchant-web" />
+        <module name="order-object" />
+        <module name="merchant-restapi" />
+        <module name="catalog-domain" />
+        <module name="merchant-sso" />
+        <module name="catalog-restapi" />
+        <module name="merchant-security" />
+        <module name="order-wap" />
+        <module name="orange-common" />
+        <module name="order-restapi" />
+        <module name="orange-order" />
+        <module name="orange-consumer" />
+        <module name="catalog-object" />
+        <module name="order-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="orange-admin" options="-parameters" />
+      <module name="orange-backup" options="-parameters" />
+      <module name="orange-common" options="-parameters" />
+      <module name="orange-config" options="-parameters" />
+      <module name="orange-consumer" options="-parameters" />
+      <module name="orange-core" options="-parameters" />
+      <module name="orange-gateway" options="-parameters" />
+      <module name="orange-hystrix" options="-parameters" />
+      <module name="orange-monitor" options="-parameters" />
+      <module name="orange-order" options="-parameters" />
+      <module name="orange-order2" options="-parameters" />
+      <module name="orange-pom" options="-parameters" />
+      <module name="orange-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

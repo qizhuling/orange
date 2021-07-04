@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: orange-config
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}

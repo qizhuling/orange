@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wc.orange.admin.dao.SysSmallappMapper">
+  <resultMap id="BaseResultMap" type="com.wc.orange.admin.model.SysSmallapp">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="project_name" jdbcType="VARCHAR" property="projectName" />
+    <result column="app_name" jdbcType="VARCHAR" property="appName" />
+    <result column="app_domain" jdbcType="VARCHAR" property="appDomain" />
+    <result column="app_ip" jdbcType="VARCHAR" property="appIp" />
+    <result column="app_port" jdbcType="VARCHAR" property="appPort" />
+    <result column="dept_id" jdbcType="BIGINT" property="deptId" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="last_update_by" jdbcType="VARCHAR" property="lastUpdateBy" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id,app_id,project_name,app_name,app_domain,app_ip,app_port,dept_id,create_by,create_time,last_update_by,last_update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_smallapp
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_smallapp
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.wc.orange.admin.model.SysSmallapp">
+    insert into sys_smallapp (id,app_id,project_name,app_name,app_domain,app_ip,app_port,dept_id,create_by,create_time,last_update_by,last_update_time
+      )
+    values (#{id,jdbcType=BIGINT}, #{appId,jdbcType=VARCHAR}, #{projectName,jdbcType=VARCHAR},
+      #{appName,jdbcType=VARCHAR}, #{appDomain,jdbcType=VARCHAR}, #{appIp,jdbcType=VARCHAR},
+      #{appPort,jdbcType=VARCHAR}, #{deptId,jdbcType=BIGINT}, #{createBy,jdbcType=VARCHAR},
+      #{createTime,jdbcType=TIMESTAMP}, #{lastUpdateBy,jdbcType=VARCHAR}, #{lastUpdateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.wc.orange.admin.model.SysSmallapp">
+    insert into sys_smallapp
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="appId != null">
+        app_id,
+      </if>
+      <if test="projectName != null">
+        project_name,
+      </if>
+      <if test="appName != null">
+        app_name,
+      </if>
+      <if test="appDomain != null">
+        app_domain,
+      </if>
+      <if test="appIp != null">
+        app_ip,
+      </if>
+      <if test="appPort != null">
+        app_port,
+      </if>
+      <if test="deptId != null">
+        dept_id,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="lastUpdateBy != null">
+        last_update_by,
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="appId != null">
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="projectName != null">
+        #{projectName,jdbcType=VARCHAR},
+      </if>
+      <if test="appName != null">
+        #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="appDomain != null">
+        #{appDomain,jdbcType=VARCHAR},
+      </if>
+      <if test="appIp != null">
+        #{appIp,jdbcType=VARCHAR},
+      </if>
+      <if test="appPort != null">
+        #{appPort,jdbcType=VARCHAR},
+      </if>
+      <if test="deptId != null">
+        #{deptId,jdbcType=BIGINT},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateBy != null">
+        #{lastUpdateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateTime != null">
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wc.orange.admin.model.SysSmallapp">
+    update sys_smallapp
+    <set>
+      <if test="appId != null">
+        app_id = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="projectName != null">
+        project_name = #{projectName,jdbcType=VARCHAR},
+      </if>
+      <if test="appName != null">
+        app_name = #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="appDomain != null">
+        app_domain = #{appDomain,jdbcType=VARCHAR},
+      </if>
+      <if test="appIp != null">
+        app_ip = #{appIp,jdbcType=VARCHAR},
+      </if>
+      <if test="appPort != null">
+        app_port = #{appPort,jdbcType=VARCHAR},
+      </if>
+      <if test="deptId != null">
+        dept_id = #{deptId,jdbcType=BIGINT},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateBy != null">
+        last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="lastUpdateTime != null">
+        last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wc.orange.admin.model.SysSmallapp">
+    update sys_smallapp
+    set name = #{name,jdbcType=VARCHAR},
+      app_id = #{appId,jdbcType=VARCHAR},
+      project_name = #{projectName,jdbcType=VARCHAR},
+      app_name = #{appName,jdbcType=VARCHAR},
+      app_domain = #{appDomain,jdbcType=VARCHAR},
+      app_ip = #{appIp,jdbcType=VARCHAR},
+      app_port = #{appPort,jdbcType=VARCHAR},
+      dept_id = #{deptId,jdbcType=BIGINT},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      last_update_by = #{lastUpdateBy,jdbcType=VARCHAR},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="findPage" resultMap="BaseResultMap">
+        select u.*,d.name deptName from sys_smallapp u,sys_dept d where u.dept_id=d.id
+  </select>
+  <select id="findByAppid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select u.*,d.name deptName from sys_smallapp u,sys_dept d where u.app_id=#{appId,jdbcType=VARCHAR} and u.dept_id=d.id
+  </select>
+  <select id="findPageByAppname" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	<bind name="pattern" value="'%' +_parameter.appName + '%'" />
+    select u.*,d.name deptName from sys_smallapp u,sys_dept d where u.dept_id=d.id and u.app_name like #{pattern}
+  </select>
+  <select id="findPageByAppnameAndAppid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <bind name="patternAppid" value="_parameter.appId" />
+    <bind name="patternAppname" value="'%' + _parameter.appName + '%'" />
+    select u.*,d.name deptName from sys_smallapp u,sys_dept d where u.dept_id=d.id
+     and u.app_id = #{patternAppid}
+    and u.app_name like #{patternAppname}
+  </select>
+  <select id="findByUserid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id,app_id,app_name from sys_smallapp where dept_id in (SELECT dept_id FROM sys_user_dept
+    where user_id=#{appId,jdbcType=VARCHAR})
+  </select>
+  <select id="findAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id,app_id,app_name from sys_smallapp
+  </select>
+</mapper>

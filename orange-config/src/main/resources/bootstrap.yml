@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: orange-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/chenshaojian/base-config-repo
+#          username: qizhuling
+#          password: qzl861028$
+  rabbitmq:
+    addresses: amqp://39.98.197.210:5672
+    username: guest
+    password: guest

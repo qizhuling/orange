@@ -1,0 +1,33 @@
+# tomcat
+server:
+  port: 8002
+spring:
+  application:
+    name: orange-backup
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+  cloud:
+    host: localhost
+    port: 8500
+    discovery:
+      serviceName: ${spring.application.name} #注册到consul的服务名称
+#开放健康检查接口：
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+# backup datasource
+orange:
+  backup:
+    datasource:
+      host: 60.205.177.246
+      port: 3306
+      userName: root
+      password: 999663
+      database: orange
